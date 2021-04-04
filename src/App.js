@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="app">
       <div className="app__body">
-      <Sidebar />
       <Router>
+      <Sidebar />
         <Switch>
           <Route path="/rooms/:roomId">
             <Chat />
