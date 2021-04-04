@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import env from 'react-dotenv';
-
-window.env = env;
 
 ReactDOM.render(
   <React.StrictMode>
