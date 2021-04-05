@@ -1,12 +1,12 @@
-import { useState } from 'react'
 import './App.css';
 import Chat from './components/Chat';
 import Sidebar from './components/Sidebar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from './components/Login';
+import { useStateValue } from './config/StateProvider';
 
 function App() {
-  const [user, setUser] = useState('');
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="app">
 
